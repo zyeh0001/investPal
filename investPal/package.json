@@ -1,0 +1,91 @@
+{
+  "name": "@invest-pal/source",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nx dev web",
+    "start": "nx dev web",
+    "build": "nx build web",
+    "build:libs": "nx run-many -t build -p ui,shared-types,data-access",
+    "build:all": "nx run-many -t build",
+    "test": "nx test web",
+    "test:all": "nx run-many -t test",
+    "lint": "nx lint web",
+    "lint:all": "nx run-many -t lint",
+    "typecheck": "nx typecheck web",
+    "typecheck:all": "nx run-many -t typecheck",
+    "clean": "nx reset",
+    "graph": "nx graph",
+    "projects": "nx show projects"
+  },
+  "private": true,
+  "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.15",
+    "@radix-ui/react-separator": "^1.1.7",
+    "@radix-ui/react-slot": "^1.2.3",
+    "@tanstack/react-query": "^5.85.5",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
+    "lightweight-charts": "^5.0.8",
+    "lucide-react": "^0.540.0",
+    "next": "~15.2.4",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "tailwind-merge": "^3.3.1",
+    "zod": "^4.0.17",
+    "zustand": "^5.0.8"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.5",
+    "@babel/preset-react": "^7.14.5",
+    "@nx/devkit": "21.4.0",
+    "@nx/js": "21.4.0",
+    "@nx/next": "21.4.0",
+    "@nx/playwright": "21.4.0",
+    "@nx/react": "21.4.0",
+    "@nx/rollup": "21.4.0",
+    "@nx/workspace": "21.4.0",
+    "@playwright/test": "^1.36.0",
+    "@rollup/plugin-url": "^8.0.2",
+    "@svgr/rollup": "^8.1.0",
+    "@swc-node/register": "~1.9.1",
+    "@swc/cli": "~0.6.0",
+    "@swc/core": "~1.5.7",
+    "@swc/helpers": "~0.5.11",
+    "@types/node": "^20.19.11",
+    "@types/react": "19.0.0",
+    "@types/react-dom": "19.0.0",
+    "autoprefixer": "10.4.13",
+    "core-js": "^3.36.1",
+    "nx": "21.4.0",
+    "postcss": "8.4.38",
+    "rollup": "^4.14.0",
+    "swc-loader": "0.1.15",
+    "tailwindcss": "3.4.3",
+    "tailwindcss-animate": "^1.0.7",
+    "tslib": "^2.3.0",
+    "typescript": "~5.8.2",
+    "verdaccio": "^6.0.5"
+  },
+  "workspaces": [
+    "apps/*",
+    "ui",
+    "shared-types",
+    "data-access",
+    "web"
+  ],
+  "nx": {
+    "includedScripts": [],
+    "targets": {
+      "local-registry": {
+        "executor": "@nx/js:verdaccio",
+        "options": {
+          "port": 4873,
+          "config": ".verdaccio/config.yml",
+          "storage": "tmp/local-registry/storage"
+        }
+      }
+    }
+  }
+}

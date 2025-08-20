@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx nx g:*)",
+      "Bash(tree:*)",
+      "Bash(mkdir:*)",
+      "Bash(npx nx build:*)",
+      "Bash(npx nx dev:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

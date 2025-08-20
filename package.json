@@ -1,0 +1,23 @@
+{
+  "name": "investpal-parent",
+  "version": "1.0.0",
+  "description": "InvestPal - Stock Analysis Frontend MVP",
+  "private": true,
+  "scripts": {
+    "dev": "cd investPal && npm run dev",
+    "start": "cd investPal && npm run start", 
+    "build": "cd investPal && npm run build",
+    "build:libs": "cd investPal && npm run build:libs",
+    "build:all": "cd investPal && npm run build:all",
+    "install:all": "cd investPal && npm install",
+    "test": "cd investPal && npm test",
+    "typecheck": "cd investPal && npm run typecheck",
+    "clean": "cd investPal && npm run clean",
+    "setup": "cd investPal && npm install",
+    "graph": "cd investPal && npm run graph",
+    "projects": "cd investPal && npm run projects"
+  },
+  "keywords": ["investpal", "stock-analysis", "nextjs", "nx-monorepo"],
+  "author": "InvestPal Team",
+  "license": "MIT"
+}

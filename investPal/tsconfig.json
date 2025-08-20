@@ -1,0 +1,22 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compileOnSave": false,
+  "files": [],
+  "references": [
+    {
+      "path": "./ui"
+    },
+    {
+      "path": "./shared-types"
+    },
+    {
+      "path": "./data-access"
+    },
+    {
+      "path": "./web-e2e"
+    },
+    {
+      "path": "./web"
+    }
+  ]
+}
