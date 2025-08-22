@@ -1,4 +1,5 @@
 import './global.css';
+import '@investPal/designSystem/styles';
 
 export const metadata = {
   title: 'Welcome to web',

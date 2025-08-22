@@ -6,7 +6,7 @@
     "dev": "nx dev web",
     "start": "nx dev web",
     "build": "nx build web",
-    "build:libs": "nx run-many -t build -p ui,shared-types,data-access",
+    "build:libs": "nx run-many -t build -p shared-types,data-access",
     "build:all": "nx run-many -t build",
     "test": "nx test web",
     "test:all": "nx run-many -t test",
@@ -79,7 +79,6 @@
   },
   "workspaces": [
     "apps/*",
-    "ui",
     "shared-types",
     "data-access",
     "web",
