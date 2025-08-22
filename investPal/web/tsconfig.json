@@ -53,9 +53,5 @@
   "references": [
     {
       "path": "../designSystem"
-    },
-    {
-      "path": "../ui"
-    }
-  ]
+    },]
 }
