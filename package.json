@@ -15,7 +15,8 @@
     "clean": "cd investPal && npm run clean",
     "setup": "cd investPal && npm install",
     "graph": "cd investPal && npm run graph",
-    "projects": "cd investPal && npm run projects"
+    "projects": "cd investPal && npm run projects",
+    "storybook": "cd investPal && npm run storybook"
   },
   "keywords": ["investpal", "stock-analysis", "nextjs", "nx-monorepo"],
   "author": "InvestPal Team",

@@ -1,10 +1,10 @@
 {
-  "name": "@invest-pal/web-e2e",
+  "name": "@incestPal/web-e2e",
   "version": "0.0.1",
   "private": true,
   "nx": {
     "implicitDependencies": [
-      "@invest-pal/web"
+      "@incestPal/web"
     ]
   }
 }
